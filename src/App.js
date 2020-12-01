@@ -19,8 +19,8 @@ export default class App extends Component {
   }
 
   performSearch = (query = 'cats') => {
-    //const url = 'http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC';
-    const url = `http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`;
+    //const url = 'https://api.giphy.com/v1/gifs/trending?api_key=D1nN3m1qhSSEZWVCpjfenpEnjMOswPrB';
+    const url = `https://api.giphy.com/v1/gifs/search?q=${query}&api_key=D1nN3m1qhSSEZWVCpjfenpEnjMOswPrB&limit=24&rating=g`;
     axios.get(url)
       .then((response) => {
         this.setState({
